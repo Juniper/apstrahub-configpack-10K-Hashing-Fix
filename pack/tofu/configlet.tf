@@ -9,7 +9,7 @@ resource "apstra_datacenter_configlet" "configlet" {
   generators   = [
     {
       config_style  = "junos"
-      section       = "top_level_hierarchical"
+      section       = "top_level_set_delete"
       template_text = "set forwarding-options hash-key family inet layer-4"
     },
   ]
