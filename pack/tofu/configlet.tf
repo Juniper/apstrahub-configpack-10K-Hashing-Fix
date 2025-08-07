@@ -5,7 +5,7 @@
 resource "apstra_datacenter_configlet" "configlet" {
   blueprint_id = var.blueprint_id
   name         = var.name
-  condition    = "role in [\"spine\", \"leaf\"]"
+  condition    = "role in [\"superspine\", \"spine\", \"leaf\"]"
   generators   = [
     {
       config_style  = "junos"
